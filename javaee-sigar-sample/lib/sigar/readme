@@ -1,0 +1,6 @@
+windows:
+ copy sigar-amd64-winnt.dll,sigar-x86-winnt.lib,sigar-x86-winnt.dll to java bin path
+linux:
+ vi /etc/ld.so.conf
+ add LD_LIBRARY_PATH=/usr/local/lib
+ copy libsigar-amd64-linux.so,libsigar-x86-linux.so to /usr/local/lib
